@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <!-- Nền -->
+    <color name="bg_surface">#F5F7FA</color>
+    <color name="bg_card">#FFFFFF</color>
+
+    <!-- Màu chính -->
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+
+    <!-- Nút bấm -->
+    <color name="btn_bg">#4CAF50</color>
+    <color name="btn_text">#FFFFFF</color>
+</resources>

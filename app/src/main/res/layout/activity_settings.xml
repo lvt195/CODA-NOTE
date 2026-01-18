@@ -1,0 +1,73 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/colorSurface">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="6dp"
+        app:cardBackgroundColor="?attr/colorSurfaceVariant">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- TIÊU ĐỀ -->
+            <TextView
+                android:text="Cài đặt"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginBottom="16dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- DARK MODE ITEM -->
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="12dp"
+                android:background="?attr/selectableItemBackground"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Dark mode"
+                        android:textSize="16sp"
+                        android:textStyle="bold"
+                        android:textColor="?attr/colorOnSurface"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Giao diện nền tối"
+                        android:textSize="13sp"
+                        android:textColor="?attr/colorOnSurfaceVariant"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
